@@ -1,0 +1,323 @@
+body{
+     margin:0;
+	 font-family:arial, verdana, sans-serif;
+}
+
+.contenedor{
+	display:flex;
+	width:100%;
+	height:auto;
+	flex-direction:column;
+}
+header{
+	background-color:violet;
+	height:20vh;
+	align-items: center;
+	display:flex;
+	width:100%;
+	/*background: rgb(10,32,74);
+    background: linear-gradient(90deg, rgba(10,32,74,1) 9%, rgba(38,55,180,0.9528186274509804) 51%, rgba(10,32,74,1) 100%);*/
+	background: rgb(13,12,43);
+    background: linear-gradient(90deg, rgba(13,12,43,1) 0%, rgba(19,13,52,1) 14%, rgba(26,22,98,1) 53%, rgba(29,29,102,1) 64%, rgba(11,28,55,1) 100%);
+}
+.logo{
+	
+	height:17vh;
+	width:25%;
+	display:block;
+	margin-left:3%;
+	
+}
+
+
+nav{
+	height:8vh;
+	width:75%;
+	display:flex;
+	align-items: stretch;
+	justify-content:space-evenly;
+	color:white;
+}
+
+
+nav a:link, nav a:visited{
+	display:flex;
+	align-items: center;
+	justify-content:center;
+	color:white;
+	font-weight:bold;/*negrita*/
+	text-decoration:none;/*sin subrayado*/
+	width:15%;
+	height:8vh;
+	font-size:17px;
+	transition:color 1s, background-color 1s, font-size 1s, border-color 1s;
+	/*background-color:blue;*/
+	
+}
+
+
+nav a:hover{
+	color:;
+	background-color:#382687;
+	font-size:18px;
+	border-color:black;
+}
+
+main{
+	height:auto;
+	display:flex;
+	width:100%;
+	flex-direction:column;
+}
+
+.slider{
+	width:100%;
+}
+
+.slider img{
+	width:100%;
+}
+.img{
+	width:25%;
+	display:flex;
+
+}
+
+.fichas{
+	
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+	padding-left:6%;
+	padding-right:6%;
+	flex-wrap: wrap;
+	
+}
+.titulos{
+	display:flex;
+	align-items:center;
+	flex-direction:column;
+	
+}
+h1{
+	font-size:20px;
+	color:#28195e;
+}
+
+h4{
+	font-size:20px;
+	color:#28195e;
+	justify-content:center;
+	display:flex;
+}
+
+h2{
+	
+	font-size:17px;
+	color:#556ea6;
+}
+
+.ficha{
+	
+	border:3px;
+	display:flex;
+	flex-direction:column;
+	justify-content: flex-start;
+	width:25%;
+	
+	border-color:#b8b1cc;
+	border-style:solid;
+	border-width:1px;
+	margin:1%;
+	background-color:white;
+	padding:3%;
+	padding-bottom:0;
+	margin-top:0;
+	align-items: center
+
+}
+
+.texto{
+	margin-top:0;
+	line-height:30px;
+	display:flex;
+	flex-direction:column;
+	text-align:center;
+	justify-content: center;
+}
+h3{
+	color:#210970;
+	
+}
+
+p{
+	display:flex;
+	text-align:justify;
+}
+
+
+footer{
+	height:auto;
+	color:white;
+	display:flex;
+	background-color:#18355e;
+	justify-content:center;
+	background: rgb(13,12,43);
+    background: linear-gradient(90deg, rgba(13,12,43,1) 0%, rgba(19,13,52,1) 14%, rgba(26,22,98,1) 53%, rgba(29,29,102,1) 64%, rgba(11,28,55,1) 100%);
+}
+
+.abajo img{
+	
+	
+}
+
+
+.contacto{
+	margin-left:5%;
+}
+
+.imagenes{
+	margin-left:1%;
+	display:flex;
+	flex-direction:row;
+	align-items: center;
+	
+}
+
+.stan{
+	display:flex;
+	margin-bottom:5%;
+	height:auto;
+}
+
+.sup{
+	display:flex;
+	height:auto;
+	margin-bottom:11%;
+	
+}
+
+.todo {
+	display:flex;
+	flex-direction:column;
+	margin-bottom:4;
+}
+
+.parrafo{
+	margin-top:2%;
+	
+	margin-left:2%;
+	margin-right:2%;
+	display:flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	line-height:30px;
+}
+
+.foto img{
+	margin-top:5%;
+	margin-left:2%;
+	border-radius:5%;
+	
+}
+
+/*---------Media queries-------*/
+
+@media screen and (max-width:800px)
+{
+	header{
+		display:flex;
+		flex-direction:column;
+		text-align:center;
+		height:auto;
+		width:100%;
+ 		}
+	
+	main,footer{
+		height:auto;
+		flex-direction:column;
+		width:100%;
+		
+	}
+	.stan, .sup{
+		flex-direction:column;
+		height:auto;
+		align-items:center;
+		width:auto;
+		margin:auto;
+		
+	}
+	
+	.foto img{
+		margin-top:5%;
+	
+	border-radius:8%;
+		padding:4%;
+		display:flex;
+	    flex-direction:column;
+		height:auto;
+		align-items:center;
+		width:90%;
+	}	
+	
+    .ficha{
+		display:flex;
+		flex-direction:column;
+		border-radius:6px;
+		width:100%;
+	    
+	}
+	
+	nav a:link{
+		width:15%;
+		font-size:15px;
+	}
+	
+	
+	nav{
+		padding-bottom:2%;
+		margin-top:5%;
+		margin-bottom:5%;
+		width:auto;
+		display:flex;
+		flex-direction:column;
+		justify-content: space-evenly;
+		align-items: center;
+	}	
+	
+	.logo{
+		display:flex;
+		flex-direction:column;
+	    width:auto;
+	    justify-content: space-evenly;
+		height:auto;
+	}
+		
+	
+	 .imagenes{
+	
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	}
+	
+	.contacto{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	text-align:center;
+	}
+
+    .abajo{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+    }
+	
+	h2{
+		display:flex;
+		text-align:center;
+	}
+	
+}	
